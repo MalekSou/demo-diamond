@@ -1,0 +1,56 @@
+
+
+<div class="exp">
+
+    <h1 style="color: rgb(89, 89, 255);">Login</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="nickname" id="form2Example1" class="form-control" formControlName="nickname" />
+          <label class="form-label" for="form2Example1">nickname</label>
+        </div>
+      
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="form2Example2" class="form-control" formControlName="password" />
+          <label class="form-label" for="form2Example2">Password</label>
+        </div>
+      
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+              <label class="form-check-label" for="form2Example31"> Remember me </label>
+            </div>
+          </div>
+      
+          <div class="col">
+            <!-- Simple link -->
+            <a href="#!">Forgot password?</a>
+          </div>
+        </div>
+      
+        <div>
+         
+        <button id="myButton" ype="button" class="btn btn-primary btn-block mb-4" (myClick)="loginSubmit()" clickable>Sign in</button>
+        </div>
+        <!-- Register buttons -->
+        <div class="text-center">
+          <p>Not a member? <a routerLink="/register-user">Register</a></p>
+          
+          
+        </div>
+      </form>
+</div>
+
+<script>
+  console.log('Client-side code running');
+
+const button = document.getElementById('butt');
+button.addEventListener('click', function(e) {
+  console.log('button was clicked');
+});
+
+</script>
